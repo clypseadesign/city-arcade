@@ -174,18 +174,40 @@ ul {
 
 /* Hero Section */
 .hero {
-    padding: 40px 0 80px;
-    overflow: hidden;
+    padding: 0 0 80px;
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-tree {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    max-width: 400px;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: multiply;
 }
 
 .hero-container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
-    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 0 0 45%;
+    position: relative;
+    z-index: 4;
+    padding-top: 40px;
 }
 
 .hero-subtitle {
@@ -199,11 +221,12 @@ ul {
 
 .hero-title {
     font-family: var(--font-head);
-    font-size: 7.5rem;
+    font-size: 9rem;
     line-height: 0.85;
     font-weight: 200;
-    letter-spacing: -2px;
+    letter-spacing: -3px;
     margin-bottom: 25px;
+    white-space: nowrap;
 }
 
 .tags {
@@ -222,7 +245,7 @@ ul {
     font-size: 0.8rem;
     color: var(--text-gray);
     margin-bottom: 40px;
-    max-width: 400px;
+    max-width: 380px;
     line-height: 1.6;
 }
 
@@ -254,41 +277,49 @@ ul {
     justify-content: center;
 }
 
-.hero-right {
-    position: relative;
-    display: flex;
-    align-items: center;
+.hero-visual {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65%;
+    height: 100%;
+    z-index: 1;
 }
 
 .hero-image-wrapper {
     width: 100%;
-    border-radius: var(--radius-lg);
+    height: 100%;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
     overflow: hidden;
-    height: 600px;
 }
 
 .hero-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left center;
 }
 
 .hero-stats {
     position: absolute;
-    right: -20px; /* Slight overlap on edge if wanted, or inside */
+    right: 40px;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255,255,255,0.9);
-    padding: 30px;
-    border-radius: var(--radius-md);
     display: flex;
     flex-direction: column;
     gap: 30px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    background: transparent;
+    padding: 10px;
 }
 
 .stat {
     text-align: right;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    border-radius: var(--radius-md);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .stat h3 {
