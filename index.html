@@ -3,285 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>City Arcade | Modern Real Estate</title>
+    <title>City Arcade</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Remix Icons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <i class="ri-home-smile-fill"></i>
-            </a>
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </div>
+            </div>
             
-            <ul class="nav-links">
-                <li><a href="#" class="active">HOME</a></li>
-                <li class="dot"></li>
-                <li><a href="#">PROPERTIES</a></li>
-                <li class="dot"></li>
-                <li><a href="#">BUY</a></li>
-                <li class="dot"></li>
-                <li><a href="#">RENT</a></li>
-                <li class="dot"></li>
-                <li><a href="#">FIND AGENT</a></li>
-                <li class="dot"></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+            <div class="nav-center">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li class="dot"></li>
+                    <li><a href="#">PROPERTIES</a></li>
+                    <li class="dot"></li>
+                    <li><a href="#">BUY</a></li>
+                    <li class="dot"></li>
+                    <li><a href="#">RENT</a></li>
+                    <li class="dot"></li>
+                    <li><a href="#">FIND AGENT</a></li>
+                    <li class="dot"></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
             
-            <div class="nav-actions">
+            <div class="nav-right">
                 <button class="search-btn"><i class="ri-search-line"></i></button>
                 <button class="signin-btn">
                     <i class="ri-user-line"></i> SIGN IN
                 </button>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-top">
-            <div class="hero-title-container" data-aos="fade-right" data-aos-delay="200">
-                <h1 class="hero-title">CITY<br><span>ARCADE</span></h1>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-top">
+                <div class="hero-column left">
+                    <div class="badge">BEST REAL ESTATE AGENCY</div>
+                    <p class="hero-desc">FIND YOUR DREAM HOME, EXPLORE PREMIUM PROPERTIES, AND INVEST WITH CONFIDENCE THROUGH CITY ARCADE, YOUR TRUSTED PARTNER IN MODERN REAL ESTATE.</p>
+                </div>
+                
+                <div class="hero-column center">
+                    <h1 class="hero-title">CITY<br><span class="indent">ARCADE</span></h1>
+                </div>
+                
+                <div class="hero-column right">
+                    <div class="stat-item">
+                        <h3>10K</h3>
+                        <p>HAPPY CLIENTS</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5K</h3>
+                        <p>PROPERTIES SOLD</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>CITIES COVERED</p>
+                    </div>
+                </div>
             </div>
-            <div class="hero-stats" data-aos="fade-left" data-aos-delay="400">
-                <div class="stat-item">
-                    <h3>10K</h3>
-                    <p>HAPPY CLIENTS</p>
-                </div>
-                <div class="stat-item">
-                    <h3>5K</h3>
-                    <p>PROPERTIES SOLD</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>CITIES COVERED</p>
-                </div>
-            </div>
-        </div>
 
-        <div class="hero-main">
-            <div class="hero-left-content" data-aos="fade-up" data-aos-delay="600">
-                <div class="badge">BEST REAL ESTATE AGENCY</div>
-                <p class="hero-desc">FIND YOUR DREAM HOME, EXPLORE PREMIUM PROPERTIES, AND INVEST WITH CONFIDENCE THROUGH CITY ARCADE. YOUR TRUSTED PARTNER IN MODERN REAL ESTATE.</p>
-            </div>
-            
-            <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="800">
+            <div class="hero-image-wrapper">
                 <img src="assets/images/hero.png" alt="Modern Modular Home" class="hero-image">
                 <div class="hero-image-overlay">
                     <p>FUTURE OF LIVING<br>WITH CITY ARCADE</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Statement Section -->
-    <section class="statement" data-aos="fade-up">
-        <div class="statement-container">
-            <h2>A MODERN REAL ESTATE PLATFORM, <br>
-                CITY ARCADE INCORPORATES <br>
-                <span class="text-light">ADVANCED DIGITAL TOOLS AND</span> <br>
-                <span class="text-light">TRUSTED</span> <br>
-                <span class="text-light">LOCAL EXPERTISE</span>
-            </h2>
-        </div>
-    </section>
+        <!-- Statement Section -->
+        <section class="statement">
+            <div class="statement-content">
+                <h2>A MODERN REAL ESTATE PLATFORM,<br>
+                    <span class="indent-1">CITY ARCADE INCORPORATES</span><br>
+                    <span class="text-light indent-2">ADVANCED DIGITAL TOOLS AND</span><br>
+                    <span class="text-light indent-3">TRUSTED</span><br>
+                    <span class="text-light indent-4">LOCAL EXPERTISE</span>
+                </h2>
+            </div>
+        </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="features-container">
+        <!-- Features Grid -->
+        <section class="features">
             <div class="features-grid">
                 <!-- Left Column (4 blocks) -->
                 <div class="features-list">
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="feature-content">
-                            <h3>INSTANT<br>PROPERTY SEARCH</h3>
+                    <div class="feature-card">
+                        <h3 class="card-title">INSTANT<br>PROPERTY SEARCH</h3>
+                        <div class="card-bottom">
                             <p>DISCOVER HOMES AND APARTMENTS<br>WITH JUST A FEW CLICKS</p>
+                            <i class="ri-arrow-right-up-line icon"></i>
                         </div>
-                        <div class="feature-icon"><i class="ri-arrow-right-up-line"></i></div>
                     </div>
                     
-                    <div class="feature-card dark" data-aos="fade-up" data-aos-delay="200">
-                        <div class="feature-content">
-                            <h3>VERIFIED<br>PRO LISTINGS</h3>
+                    <div class="feature-card dark">
+                        <h3 class="card-title">VERIFIED<br>PRO LISTINGS</h3>
+                        <div class="card-bottom">
                             <p>100% VERIFIED AND UPDATED PROPERTY<br>DETAILS</p>
+                            <i class="ri-arrow-right-up-line icon accent"></i>
                         </div>
-                        <div class="feature-icon"><i class="ri-arrow-right-up-line"></i></div>
                     </div>
                     
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="feature-content">
-                            <h3>SMART<br>INVESTING INSIGHTS</h3>
+                    <div class="feature-card">
+                        <h3 class="card-title">SMART<br>INVESTING INSIGHTS</h3>
+                        <div class="card-bottom">
                             <p>PERSONALIZED RECOMMENDATIONS TO<br>GROW YOUR WEALTH</p>
+                            <i class="ri-arrow-right-up-line icon"></i>
                         </div>
-                        <div class="feature-icon"><i class="ri-arrow-right-up-line"></i></div>
                     </div>
                     
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
-                        <div class="feature-content">
-                            <h3>REAL TIME<br>PROPERTY UPDATES</h3>
+                    <div class="feature-card">
+                        <h3 class="card-title">REAL TIME<br>PROPERTY UPDATES</h3>
+                        <div class="card-bottom">
                             <p>GET INSTANT ALERTS ON NEW LISTINGS<br>AND PRICE CHANGES</p>
+                            <i class="ri-arrow-right-up-line icon"></i>
                         </div>
-                        <div class="feature-icon"><i class="ri-arrow-right-up-line"></i></div>
                     </div>
                 </div>
 
                 <!-- Right Column (Image) -->
-                <div class="features-image-wrapper" data-aos="fade-left" data-aos-delay="500">
+                <div class="features-image-wrapper">
                     <img src="assets/images/secondary.png" alt="Modular Home Design" class="features-image">
                 </div>
             </div>
             
-            <div class="features-bottom" data-aos="fade-up" data-aos-delay="600">
-                <div class="why-arcade">
-                    <h2>WHY<br>CITYARCADE?</h2>
-                    <button class="pill-btn">WHY CHOOSE US</button>
+            <div class="bottom-banner">
+                <div class="banner-img-wrapper">
+                    <img src="assets/images/hero.png" alt="Detail">
                 </div>
-                <div class="stay-updated">
+                <div class="banner-text">
                     <p>STAY UPDATED WITH PROPERTY<br>VALUATIONS & TRENDS</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Missing Sections (Added as requested) -->
-    
-    <!-- Featured Properties -->
-    <section class="featured-properties">
-        <div class="section-header" data-aos="fade-up">
-            <h2>FEATURED <span>LISTINGS</span></h2>
-            <button class="pill-btn">VIEW ALL</button>
-        </div>
-        
-        <div class="properties-grid">
-            <div class="property-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="property-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Villa">
-                    <span class="price">$1,250,000</span>
-                </div>
-                <div class="property-info">
-                    <h4>Modern Minimalist Villa</h4>
-                    <p><i class="ri-map-pin-line"></i> Beverly Hills, CA</p>
-                    <div class="property-stats">
-                        <span><i class="ri-hotel-bed-line"></i> 4 Beds</span>
-                        <span><i class="ri-showers-line"></i> 3 Baths</span>
-                        <span><i class="ri-layout-line"></i> 3,500 sqft</span>
-                    </div>
+                <div class="banner-why">
+                    <h2>WHY<br>CITYARCADE?</h2>
+                    <button class="pill-btn right-btn">WHY CHOOSE US</button>
                 </div>
             </div>
-            
-            <div class="property-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="property-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80" alt="Apartment">
-                    <span class="price">$850,000</span>
-                </div>
-                <div class="property-info">
-                    <h4>Luxury Downtown Penthouse</h4>
-                    <p><i class="ri-map-pin-line"></i> Manhattan, NY</p>
-                    <div class="property-stats">
-                        <span><i class="ri-hotel-bed-line"></i> 2 Beds</span>
-                        <span><i class="ri-showers-line"></i> 2 Baths</span>
-                        <span><i class="ri-layout-line"></i> 1,800 sqft</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="property-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="property-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="House">
-                    <span class="price">$2,100,000</span>
-                </div>
-                <div class="property-info">
-                    <h4>Eco-Friendly Glass House</h4>
-                    <p><i class="ri-map-pin-line"></i> Austin, TX</p>
-                    <div class="property-stats">
-                        <span><i class="ri-hotel-bed-line"></i> 5 Beds</span>
-                        <span><i class="ri-showers-line"></i> 4 Baths</span>
-                        <span><i class="ri-layout-line"></i> 4,200 sqft</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="testimonials-container" data-aos="fade-up">
-            <div class="testimonial-content">
-                <i class="ri-double-quotes-l quote-icon"></i>
-                <h2>"CITY ARCADE MADE FINDING OUR DREAM HOME AN ABSOLUTE BREEZE. THEIR DIGITAL TOOLS AND EXPERT AGENTS ARE UNMATCHED."</h2>
-                <div class="client-info">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&q=80" alt="Client">
-                    <div>
-                        <h4>MICHAEL HARRISON</h4>
-                        <p>Tech Entrepreneur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container" data-aos="fade-up">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <h2>CITY ARCADE</h2>
-                    <p>Redefining modern living with cutting-edge real estate solutions.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="ri-instagram-line"></i></a>
-                        <a href="#"><i class="ri-twitter-x-line"></i></a>
-                        <a href="#"><i class="ri-linkedin-fill"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="link-col">
-                        <h4>COMPANY</h4>
-                        <a href="#">About Us</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Press</a>
-                        <a href="#">Contact</a>
-                    </div>
-                    <div class="link-col">
-                        <h4>SERVICES</h4>
-                        <a href="#">Buy</a>
-                        <a href="#">Rent</a>
-                        <a href="#">Sell</a>
-                        <a href="#">Property Management</a>
-                    </div>
-                    <div class="link-col">
-                        <h4>LEGAL</h4>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 City Arcade. All rights reserved.</p>
-                <div class="bottom-links">
-                    <a href="#">Back to Top <i class="ri-arrow-up-line"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </section>
+    </div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
