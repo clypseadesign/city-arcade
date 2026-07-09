@@ -216,7 +216,7 @@ ul {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 25%);
+    background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.5) 15%, transparent 40%);
     pointer-events: none;
 }
 
